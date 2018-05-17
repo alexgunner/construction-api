@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://boiling-inlet-44438.herokuapp.com/*'
+    origins '*'
     resource '*', :headers => :any, :methods => [:get, :post, :patch, :update, :options]
   end
 end
